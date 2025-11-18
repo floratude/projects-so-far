@@ -67,7 +67,20 @@ this is not <em>hello</em>
 <p> &lt; p &gt;</p>
 <p> &lt;p&gt; coding is fun &lt;p&gt; </p>
 
+<!-- html-boilerplate: 7 elements -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <link/>
+    </head>
 
+    <body>
+        <h1></h1>
+        <p></p>
+    </body>
+</html>
 
 &#174;
 <!--    &      #              decimal no. ref      ; -->
@@ -198,7 +211,7 @@ cite as an element: title of a work
 
 <br>
 <p>
-    <sub>79</sub>Au is the chemical element gold.
+    (<sub>79</sub>Au) is the chemical element gold.
 </p>
 
 <br>
@@ -229,18 +242,179 @@ cite as an element: title of a work
     </form>
 </p>
 
+<br/>
 
-<!-- html-boilerplate: 7 elements -->
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title></title>
-        <link/>
-    </head>
+<form action="url-goes-here" method="HTTP">
+    <label>
+        Email (required): 
+        <input type="email" id="email" placeholder="example@email.com">
+        <!---when the input is nested inside the lable element you create an implicit association between the label and input element-->
+        <!---if you want to explicity associate a label and input you can use for attribute-->
+    </label>
+</form>
 
-    <body>
-        <h1></h1>
-        <p></p>
-    </body>
-</html>
+<br></br>
+<form>
+    <label for="email">
+        Email address (required field): 
+         <input required type="email" name="email" id="email">
+    </label>
+    
+</form>
+
+<br></br>
+
+
+<button>
+    Start Game
+</button>
+
+<button type="button">
+    Show Alert
+</button>
+<!--needs javascript code for the pop up to work -->
+
+<button type="submit">
+    Submit Form
+</button>
+
+<button type="reset">
+    Reset form
+</button>
+
+<br></br>
+
+<form>
+    <label for="email">Email Address (Required field):</label>
+    <input required type="email">
+    <button type="submit">Sumbit Form</button>
+</form>
+
+<br></br>
+
+<form>
+    <label for="email">Email Address (Required field):</label>
+    <input 
+    required 
+    type="email"
+    minlenght="4"
+    maxlength="64"
+    >
+    <button type="submit">Sumbit Form</button>
+</form>
+
+<br></br>
+
+<input>
+
+<input disabled>
+
+<input readonly value="example@email.com">
+
+<br></br>
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+    </fieldset>
+</form>
+
+<br></br>
+
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>Name</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<br></br>
+
+
+<form>
+    <fieldset>
+        <legend>Are you 25+ old?</legend>
+        <input type="radio">
+        <label>Yes</label>
+
+        <input type="radio">
+        <label>No</label>
+    </fieldset>
+</form>
+
+<br></br>
+
+
+<form>
+    <fieldset>
+        <legend>Are you 25+ old?</legend>
+        <input type="radio" id="yes-option" name="age">
+        <label for="yes-option">Yes</label>
+
+        <input type="radio" id="no-option" name="age">
+        <label for="no-option">No</label>
+    </fieldset>
+</form>
+
+<!---since the name attribute is used to grouped together the radio button in the above example and not in the example before, only one radio button can be selected at a time-->
+
+<br></br>
+<form>
+    <fieldset>
+        <legend>How did you find us?</legend>
+        <input type="checkbox">
+        <label>Social Media</label>
+
+        <input type="checkbox">
+        <label>Friend</label>
+
+    </fieldset>
+</form>
+
+<br></br>
+<form>
+    <fieldset>
+        <legend>Rating</legend>
+        <label for="rating">How much would you rate the service?</label>
+        <select>
+            <option>Poor</option>
+            <option>Good</option>
+            <option>Excellent</option>
+        </select>
+
+    </fieldset>
+</form>
+
+<br></br>
+<form>
+    <fieldset>
+        <legend>Rating</legend>
+        <label for="rating">How much would you rate the service?</label>
+        <select>
+            <option value="poor">Poor</option>
+            <option value="good">Good</option>
+            <option value="excellent">Excellent</option>
+        </select>
+
+    </fieldset>
+</form>
+
+<br></br>
+<form>
+    <fieldset>
+        <legend>Rating</legend>
+        <label for="comments">Other Comments</label>
+       <textarea></textarea>
+    </fieldset>
+</form>
+
+<br></br>
+<form>
+    <fieldset>
+        <legend>Rating</legend>
+        <label for="comments">Other Comments</label>
+       <textarea cols="30" rows="10"></textarea>
+    </fieldset>
+</form>
