@@ -2,105 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Dead by Daylight 2v8 Survey Form</title>
+    <title>Survey Form</title>
   </head>
 
- <body>
+  <body>
     <h1 id="title">Dead by Daylight 2v8 Feedback Survey</h1>
+
     <p id="description">Thank you for taking the time to give your feedback on latest installment of 2v8 mode in Dead by Daylight!</p>
+
     <form id="survey-form">
+
       <fieldset>
         <legend>Personal Information</legend>
-      <label id="name-label">Name</label>
-      <input
-      required
-      type="text"
-      id="name"
-      placeholder="name-in-game"
-      >
+        <label id="name-label">Name
+          <input
+          required
+          type="text"
+          id="name"
+          placeholder="in-game-nickname"
+          >
+        </label>
   
-      <label id="email-label">Email</label>
-      <input
-      required
-      type="email"
-      id="email"
-      placeholder="johndoe@email.com"
-      >
-      <label id="number-label">Age (optional)</label>
-      <input
-      type="number"
-      id="number"
-      min="17"
-      max="100"
-      placeholder="17+"
-      >
-    </fieldset>
-    
-    </br>
+        <label id="email-label">Email
+          <input
+          required
+          type="email"
+          id="email"
+          minlength="4"
+          maxlength="60"
+          placeholder="johndoe@email.com"
+          >
+        </label>
 
-    <fieldset>
-      <legend>Gameplay Feedback</legend>
+        <label id="number-label">Age (optional)
+          <input
+          type="number"
+          id="number"
+          min="17"
+          max="100"
+          placeholder="17+"
+          >
+        </label>
+      </fieldset>
+      </br>
+
+      <fieldset>
+        <legend>Gameplay Feedback</legend>
         <label>Did you play Dead by Daylight during the latest version of the 2v8 game mode (November 6th to 20th)?</label>
         </br>
-            <input required type="radio" name="play" value="yes">
-            <label>Yes</label>
+        <label>
+        <input required type="radio" name="gameplay" value="yes">
+        Yes
+        </label>
 
-            <input required type="radio" name="play" value="no">
-            <label>No</label>
-            <p>
-              <label>What role do you typically play when you play 2v8 mode in Dead by Daylight?</label>
-              </br>
-                <select id="dropdown">
-                  <option>Killer almost always</option>
-                  <option>Killer mostly</option>
-                  <option>Both equally</option>
-                  <option>Survivor mostly</option>
-                  <option>Survivor almost always</option>
-                </select>
-            </p>
+        <label>
+        <input required type="radio" name="gameplay" value="no">
+        No
+        </label>
 
-            <p>Please select which of the following Survivor classes you played as in at least one match during the latest 2v8 game mode (Nov. 6th to 20th).</br>
-               <input type="checkbox" value="medic">
-               <label>Medic</label>
-               <br>
-               <input type="checkbox" value="guide">
-               <label>Guide</label>
-               <br>
-               <input type="checkbox" value="escapist">
-               <label>Escapist</label>
-               <br>
-               <input type="checkbox" value="scout">
-               <label>Scout</label>
-               <br>
-               <input type="checkbox" value="i-never-played-as-a-survivor-during-a-2v8-match">
-               <label>I never played as a Survivor during a 2v8 match</label>
-            </p>
+        <p>
+          <label>What role do you typically play when you play 2v8 mode in Dead by Daylight?</label>
+          </br>
+          <select id="dropdown">
+            <option>Killer almost always</option>
+            <option>Killer mostly</option>
+            <option>Both equally</option>
+            <option>Survivor mostly</option>
+            <option>Survivor almost always</option>
+          </select>
+        </p>
 
-            <p>Please select which of the following Killer classes you played as in at least one match during the latest 2v8 game mode (Nov. 6th to 20th).</br>
-               <input type="checkbox" value="enforcer">
-               <label>Enforcer</label>
-               <br>
-               <input type="checkbox" value="shadow">
-               <label>Shadow</label>
-               <br>
-               <input type="checkbox" value="brute">
-               <label>Brute</label>
-               <br>
-               <input type="checkbox" value="fearmonger">
-               <label>Fearmonger</label>
-               <br>
-               <input type="checkbox" value="i-never-played-as-a-killer-during-a-2v8-match">
-               <label>I never played as a Killer during a 2v8 match</label>
-            </p>
+        <p>Please select which of the following Survivor classes you played as in at least one match during the latest 2v8 game mode (Nov. 6th to 20th).</br>
+          <input type="checkbox" value="medic">
+          <label>Medic</label>
+          <br>
+          <input type="checkbox" value="guide">
+          <label>Guide</label>
+          <br>
+          <input type="checkbox" value="escapist">
+          <label>Escapist</label>
+          <br>
+          <input type="checkbox" value="scout">
+          <label>Scout</label>
+          <br>
+          <input type="checkbox" value="i-never-played-as-a-survivor-during-a-2v8-match">
+          <label>I never played as a Survivor during a 2v8 match</label>
+        </p>
 
-<p>If any, what are your main points of frustration with the latest 2v8 game mode (Nov. 6th to 20th) as a Survivor or Killer?</p>
-<textarea placeholder="other comments">
-
-</textarea>
+        <p>Please select which of the following Killer classes you played as in at least one match during the latest 2v8 game mode (Nov. 6th to 20th).</br>
+          <input type="checkbox" value="enforcer">
+          <label>Enforcer</label>
+          <br>
+          <input type="checkbox" value="shadow">
+          <label>Shadow</label>
+          <br>
+          <input type="checkbox" value="brute">
+          <label>Brute</label>
+          <br>
+          <input type="checkbox" value="fearmonger">
+          <label>Fearmonger</label>
+          <br>
+          <input type="checkbox" value="i-never-played-as-a-killer-during-a-2v8-match">
+          <label>I never played as a Killer during a 2v8 match</label>
+        </p>
     </fieldset>
-    <p>
-    <button type="submit" id="submit">Submit</button>
+
+    <p>If any, what are your main points of frustration with the latest 2v8 game mode (Nov. 6th to 20th) as a Survivor or Killer?
+<textarea cols="80"rows="8" placeholder="other comments"></textarea>
     </p>
+
+    <br>
+    <foot>
+      <button type="submit" id="submit">Submit</button>
+    </foot>
     </form>
 
   </body>
