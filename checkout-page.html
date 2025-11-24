@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart </h2>
+        <img src="https://cdn.discordapp.com/attachments/743331019545116713/1442482129580851250/header-square.png?ex=692597ab&is=6924462b&hm=1998363b2961e8449265fad95403de68e7bfe80e7c2bfd6c08b75dd861467f2e&" alt="Promotional artwork for Dead by Daylight: Chucky, featuring the sinister doll Chucky peeking from behind a door with a menacing grin and holding a blood-stained knife.">
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <fieldset>
+                <legend>Card Details</legend>
+                    <label for="card-name">
+                        Name on the card:
+                        <span aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                    required
+                    type="text"
+                    id="card-name" 
+                    name="card-name"
+                    >
+                    
+                    <br></br>
+                    <label for="card-number">
+                        Card Number:
+                        <span aria-hidden="true">*</span>
+                    </label>
+                    <input
+                    required
+                    type="text"
+                    id="card-number"
+                    name="card-number"
+                    aria-describedby="card-number-help"
+                    >
+                    <p id="card-number-help">Please enter your 16-digit card number without spaces or dashes.</p>
+
+                    <label for="expiration">
+                        Expiration:
+                        <span aria-hidden="true">*</span>
+                    </label>
+                    <input
+                    required
+                    type="text"
+                    id="expiration"
+                    name="expiration"
+                    >
+            </fieldset>
+        </form>
+        <br>
+        <button type="button">Place Order</button>
+    </section>
+</body>
+
+</html>
