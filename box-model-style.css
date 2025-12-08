@@ -1,0 +1,20 @@
+
+
+.box-1 {
+    box-sizing: content-box;
+    background-color: red;
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+    border: 30px solid black;
+}
+
+.box-2 {
+    box-sizing: border-box;    
+    background-color: green;
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+    border: 30px solid black;
+
+}

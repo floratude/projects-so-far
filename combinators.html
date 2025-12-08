@@ -4,13 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width: device-width initial-scale="0.1">
         <title>Combinators</title>
-        <link rel="stylesheet" href="combinator-style.css"
+        <link rel="stylesheet" href="combinator-style.css">
     </head>
 
     <body>
+<!---
+combinator: does it explain the relationship between listed selectors?---yes
+
+-->
+
+
         <div id="container">
-            <p>This is heading #1</p>
-            <p>This is heading #2</p>
+            <p>This is paragrah #1</p> <!---(>)child-->
+            <p>This is paragrah #2</p> <!---(>)child-->
+            <h2>This is a h2</h2>
+            <div>
+                <p>This is paragrah #3</p> <!---(space)descended-->
+            </div>
+            
         </div>
+
+        <p>This is paragrah #4</p> <!---(+)adjacent sibling and (~)general sibling-->
+        <p>This is paragrah #5</p> <!---(~)general sibling-->
     </body>
 </html>
