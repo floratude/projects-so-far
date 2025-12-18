@@ -1,0 +1,14 @@
+.inline-block-element {
+    display: inline-block; 
+    /* if we remove the above line */
+    width: 150px;
+    height: 100px;
+}
+
+.element1 {
+    background-color: yellow;
+}
+
+.element2 {
+    background-color: red;
+}
