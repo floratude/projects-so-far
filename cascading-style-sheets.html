@@ -1,0 +1,35 @@
+<!--
+this is inline css
+should be avoided, why? because it creates clutter in the HTML doc and make the code harder to maintain
+-->
+<p style="color: green;">This is a paragraph styled using inline css</p>
+
+
+<!-- 
+this is internal css 
+when is internal css used? 
+is it used when you need to style a single document? --- yes 
+ --->
+
+ <head>
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+ </head>
+
+<body>
+    <p>This is a paragraph syled using internal css</p>
+</body>
+
+<!-- 
+this is external css
+-->
+
+<head>
+    <link rel="stylesheet" href="cascading-styles-sheet.css">
+</head>
+<body>
+    <p id="external-css">This is a paragraph styled using external css</p>
+</body>

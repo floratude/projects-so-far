@@ -249,9 +249,17 @@ cite as an element: title of a work
         Email (required): 
         <input type="email" id="email" placeholder="example@email.com">
         <!---when the input is nested inside the lable element you create an implicit association between the label and input element-->
-        <!---if you want to explicity associate a label and input you can use for attribute-->
+        <!---if you want to explicity associate a label and input you can use for attribute. the for attritube and id need to be the same -->
     </label>
 </form>
+
+<form action="url-goes-here" method="HTTP">
+    <label for="email">
+        Email (required): 
+    </label>
+    <input type="email" id="email" placeholder="example@email.com">
+</form>
+
 
 <br></br>
 <form>
