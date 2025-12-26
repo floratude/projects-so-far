@@ -1,3 +1,4 @@
+<h2>Inline-Internal-External</h2>
 <!--
 this is inline css
 should be avoided, why? because it creates clutter in the HTML doc and make the code harder to maintain
@@ -33,3 +34,114 @@ this is external css
 <body>
     <p id="external-css">This is a paragraph styled using external css</p>
 </body>
+
+<h2>Width-Height</h2>
+<head>
+    <style>
+        .box-01 {
+            width: 100px;
+            height: 100px; 
+            background-color: pink;
+        }
+
+          .box-02 {
+            width: auto;
+            height: 50px; 
+            background-color: pink;
+/* 
+|width: auto| makes it expand to fill the full width of its parent container
+note that |height:auto| does not work 
+*/
+        }
+         .box-03 {
+      width: 50px;
+      min-width: 100px;
+      height: 50px;
+      min-height: 100px;
+      background-color: pink;
+    }
+
+        .box-04 {
+      width: 200px;
+      max-width: 150px;
+      height: 200px;
+      max-height: 150px;
+      background-color: lightgreen;
+    }
+    </style>
+</head>
+<body>
+    <div class="box-01"></div>
+    <hr>
+    <div class="box-02"></div>
+    <hr>
+    <div class="box-03"></div>
+    <hr>
+    <div class="box-04"></div>
+
+    <hr>
+
+    <h2>CSS-Combinators</h2>
+    <h3>Decendent-Combinator</h3>
+
+    <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Relaxing Cat">
+        <figcaption>A relaxing cat with a border</figcaption>
+    </figure>
+
+    <hr>
+
+    <h3>Child-Combinator</h3>
+    <div class="container">
+        <p>First element</p>
+    <div>
+        <p>Second element</p>
+    </div>
+    <div>
+        <p>Third element</p>
+    </div>
+
+    <hr>
+    <h3>Next-Sibling-Combinator</h3>
+    <!-- figure element from above used -->
+
+    <hr>
+
+    <h3>Subsequent-Sibling-Combinator</h3>
+    <div class="container-01">
+        <h4>Subheading</h4>
+        <p>First paragraph.</p>
+        <p>Second paragraph.</p>
+        <p>Third paragraph.</p>
+        <p>Another paragraph element</p>
+    </div>
+    
+    <hr>
+    <hr>
+    <h2>Block and Inline</h3>
+        <h3>Block-element</h3>
+        <p style="border: 2px solid red;">
+        This is a the first block element  
+        </p>
+        <p>This is a second block element</p>
+
+    <hr>
+
+        <h3>Inline-element</h3>
+        <p>This is a
+        <span style="color: red; border: 2px solid green;">
+            red
+        </span>
+        word inside a paragraph.</p>
+
+</body>
+
+
+
+
+
+
+
+
+
+

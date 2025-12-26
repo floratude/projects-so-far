@@ -1,3 +1,19 @@
 #external-css {
     color: red; 
 }
+
+figure img {
+    border: 4px solid red; 
+}
+
+.container > p {
+    color: red;
+}
+
+img + figcaption{
+    border: 4px solid blue; 
+}
+
+h4 ~ p {
+    color: pink;
+}
