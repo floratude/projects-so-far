@@ -1,8 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    
-}
+
 
 #external-css {
     color: red; 
@@ -65,4 +61,14 @@ h4 ~ p {
     border-left: 3px dotted orange;
     border-right: 3px dotted green; 
     border-radius: 20px;
+}
+
+
+li {
+    /* margin-bottom: 40px; */
+}
+/* or */
+li {
+    line-height: 2;
+    /* why are we just using unitless numbers and not pixels or percentage */
 }
