@@ -1,0 +1,43 @@
+*{
+  background-color: lightgrey; 
+}
+
+a { 
+text-decoration: none;
+}
+
+a:link {
+  color: orange; 
+}
+
+a:hover {
+  color: green; 
+}
+
+a:active {
+  color: pink;
+}
+
+a:focus {
+outline: solid 2px yellow; 
+}
+
+a:visited {
+  color: red; 
+}
+
+ul {
+  list-style-type: none; 
+}
+
+
+h1 { 
+  text-align: center; 
+}
+
+.todo-list {
+  margin: 10px; 
+  background-color: white; 
+}
+
+
