@@ -69,6 +69,31 @@ li {
 }
 /* or */
 li {
-    line-height: 2;
+    line-height: 1.5;
     /* why are we just using unitless numbers and not pixels or percentage */
+}
+
+ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    list-style-image: url()
+    /* how must one size the image above? */
+}
+
+a:link {
+    color: red; 
+    text-decoration: underline;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: rgb(255, 114, 137);
+    outline: 2px solid violet;
+}
+
+a:active {
+    color: yellow;
 }
