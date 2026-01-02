@@ -1,0 +1,10 @@
+.box {
+    height: 100px;
+    background-color: pink;
+}
+
+span {
+    background-color: pink;
+    border: 4px solid green;
+}
+
