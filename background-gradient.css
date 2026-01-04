@@ -1,0 +1,22 @@
+/* .our-box {
+    background: linear-gradient(to bottom, red, yellow);
+    height: 60vh;
+} */
+
+/* .our-box {
+    width: 50vh;
+    height: 50vh;
+    background: radial-gradient(circle farthest-corner, red, orange, purple);
+} */
+
+/* .our-box {
+    width: 50vh;
+    height: 50vh;
+    background: linear-gradient(to right, teal, orange);
+} */
+
+.our-box {
+    width: 50vh;
+    height: 50vh;
+    background: radial-gradient(circle closest-side at center, teal 50%, orange 50%);
+}
