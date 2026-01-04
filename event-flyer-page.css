@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  width: 80vw;
+  min-height: calc(100vh - 100px);
+  padding: 50px 0;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  background-color: black;
+  height: 4px;
+}
+
+section {
+  display: inline-block;
+  padding: 50px 5px;
+  text-align: left;
+  width: 30%;
+  vertical-align: top;
+  min-heigh: 100px;
+}
+
+li {
+  margin: 10px;
+}
+
