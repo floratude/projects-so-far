@@ -1,0 +1,21 @@
+/* p {
+    display: none;
+    background-color: yellow;
+}
+
+div:hover p{
+    display: block;
+    padding: 10px;
+} */
+
+p:lang(en) {
+  color: green;
+}
+
+p:lang(fr) {
+  color: blue;
+}
+
+p:lang(es) {
+  color: red;
+}
