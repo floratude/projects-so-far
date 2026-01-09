@@ -1,0 +1,25 @@
+html { 
+    font-size: 20px;
+}
+
+.moretext {
+    width: 5rem; /* 5x20=100px */
+    border: 1px solid green; 
+}
+
+.themoretext {
+    font-size: 0.5rem; /* 1/2 of 20px is 10px */
+    width: 2rem;
+    padding: 1rem;
+    border: 1px solid red; 
+}
+
+.container {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+.hello {
+    font-size: 10px;
+}

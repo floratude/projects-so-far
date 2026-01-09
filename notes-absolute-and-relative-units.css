@@ -1,0 +1,70 @@
+.hello {
+    border: 5px solid pink;
+    width: 300px;
+    height: ;
+}
+
+.container {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.card {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid olive;
+}
+
+.gopro {
+    background-color: blue;
+    width: 100vw;
+    padding: 20px;
+}
+
+.cam {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+}
+
+.sometext {
+    font-size: 16px;
+}
+
+.thetext {
+    font-size: 2em; 
+    /* 
+    since this font-size falls under typography, 
+    does it mean that the font size is 2 times the parents font size? ---yes 
+    that means it is 32px (16x2=32)
+    */
+    width: 3em; 
+    /* 
+    since this width property doesn't falls under typography, 
+    does it mean that the width is 3 times the font-size of the element itself? ---yes 
+    that means it is 96px (32x3=96) 
+    the black box underneath is 96px
+    */
+    border: 1px solid red; 
+}
+
+.textbox {
+    background-color: black;
+    width: 96px; 
+    height: 96px;
+}
+
+
+.moretext {
+    width: 5rem;
+    border: 1px solid green; 
+}
+
+.themoretext {
+    font-size: 0.5rem;
+    width: 2rem;
+    padding: 1rem;
+    border: 1px solid red; 
+}

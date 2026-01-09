@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(red, blue); 
+    /* top to bottom is the default  */
+}
+
+/* 
+to top 
+to right
+to bottom
+to left
+
+to bottom right 
+to bottom left 
+
+think of degree as a clock and you are standing in the middle of this clock 
+css uses compass direction and not math graphs
+0deg 
+ */
+
+
+*/
