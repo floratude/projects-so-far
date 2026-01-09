@@ -1,0 +1,44 @@
+body {
+    background-color: azure;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.feature-card-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    background-color: pink;
+    width: 250px;
+    padding: 5px;
+    border: 1.5px solid black;
+    border-radius: 6px;
+    margin: 10px;
+    
+}
+
+.feature-card h4 {
+    margin: 0 10px 0 5px;
+}
+
+.feature-card input[type='checkbox'] {
+    appearance: none;
+    
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(231, 118, 118); 
+    border-radius: 3px;
+    margin: auto;
+}
+
+.feature-card {
+    text-align: right;
+}
+    
+.feature-card h4, 
+.feature-card p {
+    text-align: center;
+}
