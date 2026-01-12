@@ -1,0 +1,96 @@
+main {
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+
+}
+
+/* 
+flexbox is a way to line things up in ONE direction at a time.
+One direction, not rows and colums at once.
+
+main axis: direction items flow
+cross axis: direction perpendicular to main axis: think plus sign + 
+
+if the axis is horizontal or vertical depends on `flex-direction`
+
+`flex-direction: row;`
+default value of flex-direction when you add `display: flex`
+
+`flex-direction: row-reverse;`
+
+`flex-direction: column;`
+the div elements will be aligned vertically because the main axis will be veritical and cross axis will be horizontal
+
+`flex-direction: column-reverse;`
+
+`flex-wrap: nowrap;` this is the default property, flex items won't be wrapped onto a new line, even if 
+
+`flex-wrap: wrap;`
+
+`flex-wrap: wrap-reverse;`
+
+`flex-flow` shorthand for `flex-direction` and `flex-wrap`
+
+`flex-flow: column wrap-reverse;`
+
+`justify-content: flex-start;`
+
+`justify-content: flex-end;`
+
+`justify-content: center;`
+
+`justify-content: space-between;`
+
+`justify-content: space-around;` 
+each item gets equal space on both sides of it
+
+|    A    B    C    | 
+imagine each box gets the same "air" around it
+
+|    |   A   |       |   B   |       |   C   |   |   
+space between items = full space 
+space at edges = half of that space 
+why?
+because edge items only have one side, middle items have two sides 
+
+
+
+
+*/
+
+.division {
+    width: 80px; 
+    /* 80x3=240 the width of the div exceeds the width of the container (200px, see above), the elements will by default shrink to fit the available space  */
+    height: 50px;
+}
+
+#first-div {
+    background-color: yellow;
+}
+
+#second-div {
+    background-color: red;
+}
+
+#third-div {
+    background-color: blue;
+}
+
+.container {
+    height: 200px;
+    border: 2px solid red;
+    display: flex;
+    align-self: center;
+
+}
+
+.box {
+    width: 100px; 
+    border: 1px solid; 
+    background-color: lightgreen;
+}
+
+.special-box {
+    
+}
