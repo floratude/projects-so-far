@@ -1,0 +1,95 @@
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+}
+
+h1{
+  text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    padding: 0 20px 20px;
+    border: 1px solid black;
+    margin: 20px auto;
+    
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 200px;
+    max-width: 200px;
+    padding: 30px;
+    border: 2px solid black;
+    margin: 15px;
+    transition: transform 0.3s, background-color 0.3s ease;
+}
+
+.basic-plan {
+    order: 0;
+}
+
+.pro-plan {
+    order: 1;
+    flex-grow: 2;
+}
+
+.premium-plan {
+    order: 2;
+}
+
+h2, 
+h2 + p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 10px;
+}
+
+h2 {
+    border-bottom: 10px;
+    padding: 10px;
+}
+
+p {
+    border-bottom: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+li {
+    padding: 10px;
+    border: 5px;
+    margin: 10px;
+    list-style: none;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(228, 168, 63);
+    font-weight: bold;
+}
+
+.pricing-card:hover {
+    transform: scale(1.1);
+    background-color: lightcyan;
+}
+
+.check,
+.cross {
+    font-weight: bold;
+}
+
+.check {
+    color: green;
+}
+
+.cross {
+    color: red;
+}
