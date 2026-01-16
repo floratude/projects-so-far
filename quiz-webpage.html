@@ -29,8 +29,8 @@
 
         <main>
             <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+                
                 <section role="region" aria-labelledby="student-info">
-                    
                     <h2 id="student-info">Student Info</h2>
 
                     <div class="info">
@@ -47,12 +47,10 @@
                         <label for="date-of-birth">Date of Birth:</label>
                         <input id="date-of-birth" type="date" name="date-of-birth">
                     </div>
-
                 </section>
 
 
                 <section role="region" aria-labelledby="html-questions">
-                    
                     <h2 id="html-questions">HTML</h2>
 
                     <div class="question-block">
@@ -66,14 +64,14 @@
                             </legend>
                             <ul class="answers-list">
                                 <li>
-                                    <label>
-                                        <input type="radio" id="q1-a1">
+                                    <label for="q1-a1">
+                                        <input type="radio" id="q1-a1" value="true" name="q1">
                                         True
                                     </label>
                                 </li>
                                 <li>
-                                    <label>
-                                    <input type="radio" id="q1-a2">
+                                    <label for="q1-a2">
+                                    <input type="radio" id="q1-a2" value="false" name="q1">
                                         False
                                     </label>
                                 </li>
@@ -95,31 +93,67 @@
                             </legend>
                             <ul class="answers-list">
                                 <li>
-                                    <label>
-                                        <input type="radio" id="q2-a1">
+                                    <label for="q2-a1">
+                                        <input type="radio" id="q2-a1" value="true" name="q2">
                                         True
                                     </label>
                                 </li>
                                 <li>
-                                    <label>
-                                        <input type="radio" id="q2-a2">
+                                    <label for="q2-a2">
+                                        <input type="radio" id="q2-a2" value="false" name="q2">
                                         False
                                     </label>
                                 </li>
                             </ul>
                         </fieldset>
                     </div>
-
                 </section>
 
 
                 <section role="region" aria-labelledby="css-questions">
                     <h2 id="css-questions">CSS</h2>
+
+                    <div class="formrow">
+                        <div class="question-block">
+                            <label for="q1-option">Can the CSS margin property accept negative values?</label>
+                        </div>
+
+                            <div class="answer">
+                                <select required id="q1-option" name="q1-option">
+                                    <option value=""selected disabled>Select an option</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+
+                        <div class="question-block">
+                            <label 
+                            for="q2-text" 
+                            name="q2-text"
+                            >
+                            Do you have any questions:
+                            </label>
+                        </div>
+
+                        <div class="answer">
+                            <textarea id="q2-text" name="q2-text" rows="5" cols="25"></textarea>
+                        </div>
+                    </div>
                 </section>
 
-                
+                <button type="submit">Send</button>
+
             </form>
         </main>
+
+        <footer>
+            <address>
+                <a href="https://freecodecamp.org">freeCodeCamp</a><br/>
+                San Francisco<br/>
+                California<br/>
+                USA
+            </address>
+        </footer>
   
     </body>
 </html>
